@@ -12,5 +12,3 @@ day = sys.argv[1]
 
 # print a sentence with the argument
 print(f'job finished successfully for day = {day}')
-
-cd /workspaces/data_engineer/2_docker_sql/pipeline.py /workspaces/data_engineer/Week1/pipeline.py
