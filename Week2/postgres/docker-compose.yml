@@ -1,0 +1,18 @@
+version: "3.8"
+
+volumes:
+  postgres-data-zoomcamp:
+    driver: local
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-zoomcamp
+    environment:
+      POSTGRES_USER: kestra
+      POSTGRES_PASSWORD: k3str4
+      POSTGRES_DB: postgres-zoomcamp
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-data-zoomcamp:/var/lib/postgresql/data
